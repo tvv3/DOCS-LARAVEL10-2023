@@ -1,0 +1,147 @@
+*{margin:0;padding:0;}
+.myform{width:50%;display:block;margin-left:auto;margin-right:auto; margin-top:30px;}
+
+.myform button[type="submit"]{display:block; margin-top: 30px;margin-left: auto;margin-right: auto;
+background-color: #22333b;
+}
+
+.vezilistacursuribtn{background-color: #22333b;}
+
+.myNavSpan{margin-right: 20px;margin-left:20px;line-height: 40px;}
+
+.mytable{width:90%;margin-left: auto; margin-right: auto;}
+
+.mybtn-left{margin-left: 5%;margin-bottom:30px;}
+
+h1{text-align: center;display:block;}
+.mastermainpage{background:#22333b; color:white;min-height:100vh;}
+.mymessages{width:90%;margin-left: auto;margin-right: auto;}
+.navbar-toggler-icon{background-image: none!important; color:white; margin:10px; 
+  display:flex; justify-content: center; align-items: center; }
+/*for text_home*/
+/*.myform button[type="submit"]{display:block; margin-top: 30px;margin-left: auto;margin-right: auto;
+background-color: #22333b;
+}*/
+.mypills{background-color:  #22333b; border:0px;
+  /*height: 30px!important;line-height: 30px!important;*/}
+.mypills:first-of-type{margin-left: 5px;}
+.mypills.active{/*background-color: #22333b!important;color:white!important;*/
+  background-color: #22333b; color: #8cc1a6;
+  
+  border-bottom: 1px solid white;
+  font-weight: bold;}
+/*.mypills.active:hover*/.mypills:hover{background-color: var(--bs-light);  border: 0px;}
+
+.mynota .mybuttons a.btn{background-color: #22333b!important;}
+.mynota .mybuttons a.btn[disabled]{background-color: grey!important; }
+.mynota .mybuttons a.btn[disabled]:hover{color: var(--bs-btn-color)!important;}
+
+.mysite .mybuttons a.btn, .mysite a.btn{background-color: #22333b!important;}
+.mysite .mybuttons a.btn[disabled]{background-color: grey!important;}
+.mysite .mybuttons a.btn[disabled]:hover{color: var(--bs-btn-color)!important;}
+/*for aside1*/
+
+.mybuttons{margin-bottom: 30px;} /*butoanele de anterior si urmator*/
+ main{position:relative;}
+ /*@media pe mobil .aside1{display:none}*/
+ .mymainintro {display:flex;flex-direction: row; flex-grow:1;
+  justify-content:center;align-items: center;margin:0px!important;}
+ 
+
+  #lista_cursuri{display:none;}
+  
+  @media screen and (min-width:601px)
+  { .endingnav {margin-left:auto;display:flex;/*background-color:red;*/}
+    .mypage{background-color: var(--bs-light) /* #555*/; color:white;}
+    .nav-pills>li>button {
+      line-height: 2em;
+      font-size: 2em;
+      padding: 10px;
+  }
+  main, .aside1{overflow-y: scroll;}
+  }
+ 
+ @media screen and (max-width:600px) {
+  .mypage{display:flex;flex-direction: column;background-color: /* #7d260b*/ var(--bs-light); color:white;}
+  #search-btn-nav{display:none;}/*fara butonul de search pe mobil*/
+  #lista_cursuri{display:none;}
+ }
+ 
+ .aside1{scrollbar-color: #8cc1a6!important;}
+  .link-light {
+    color: /* #adafae; var(--bs-body-color) !important;*/
+    #adafae!important;
+  }
+  .link-light:hover, .link-light:focus {
+    color: #8cc1a6 !important;
+  }
+  .btn-toggle.active{
+    color: #d2f4ea;
+}
+  .btn-toggle:hover, .btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: #d2f4ea;
+  }
+
+  .btn-toggle {
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: /*rgba(0, 0, 0, .65);*/
+    #929292;
+    background-color: transparent;
+}
+
+/*formatarea notelor si siteurilor din view_content*/
+ h1,h2,h3{padding-left: 10px; padding-right: 10px;}
+ h1.titluHomePage{color:black;}
+ h1{font-size:1.5rem;}
+ .titluri h1{font-size: 2rem;color:white!important;}
+ .titluri h2{font-size: 1.25rem;color: #8cc1a6 !important;}
+ .mynota span{font-size: 1rem;font-weight:bold; display:inline-block;}
+ .mynota p, .mysite p{font-size:1rem;}
+ @media screen and (min-width:601px){
+  h1{font-size:2rem;}
+  .titluri h1{font-size: 4rem;color:white!important;}
+  .titluri h2{font-size: 2.5rem;color: #8cc1a6 !important;}  
+  .mynota span{font-size: 1.5rem;}
+  .mynota p, .mysite p{font-size:1.5rem;}
+ }
+
+/*.mynota h3, .mysite h3{margin-bottom: 30px;}*/
+.mynota p, .mysite p{color:#8cc1a6!important; font-weight: bold;display:inline-block;}
+.mysite .mynote, .mynota .mynote, .mynota .mycode{padding:10px; margin-left: auto; margin-right: auto; width:70%;
+       overflow-y: auto; /*max-height:200px;*/ background-color:var(--bs-light); color:white; margin-bottom: 30px;}
+.mysite .mywebsite{padding:10px; margin-left: auto; margin-right: auto; width:70%;
+  overflow-x: auto; /*max-height:40px;*/ background-color:var(--bs-light); color:white; margin-bottom: 30px;
+  overflow-y: hidden;}
+
+  /* formatarea my search results page */
+  /*https://www.color-hex.com/color/222222*/
+
+  .mysearchresultspage{/*background-color: #7d260b; color: rgba(0, 0, 0, 0.9) !important;*/
+                     background-color: var(--bs-light);
+                     color:white; 
+                     flex-grow:1;min-width: 100vw;min-height: 100vh;
+                     padding:30px;}
+  .mysearchresultspage h2 {color:rgba(255, 255, 255, 0.4);font-weight:bold;font-size: x-large;}
+  .mysearchresultspage h1 {display:block; color:rgba(255, 255, 255, 0.4); font-weight:bold; 
+                           text-align: center;}
+  .mysearchresultspage a{ color: rgba(255, 255, 255, 0.4); font-weight: bold;font-size: large;}
+  .mysearchresultspage a:hover{color:rgba(255, 255, 255, 0.2);}
+  .mysearchresultspage div.search_rezult_cod, 
+  .mysearchresultspage div.search_rezult_nota,
+  .mysearchresultspage div.search_rezult_site {color:white /*red*/;font-size: medium;}
+
+  .mysearchresultspage div.search_rezult_cod text, 
+  .mysearchresultspage div.search_rezult_nota text,
+  .mysearchresultspage div.search_rezult_site text {color:rgba(255, 255, 255, 0.4); font-weight: bold;}
+
+  .mysearchresultspage text.search_result_keyword {color:red;}
+
+  /*altele noi*/
+
+  .nav-link-underlined{text-decoration: underline;}
+
+  /*@media screen and (max-width: 600px) {*/
+    pre code{ white-space: pre-wrap!important;}    
+  
